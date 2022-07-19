@@ -206,7 +206,7 @@ function library.new(library_title, cfg_location)
         Text = library_title,
         TextColor3 = Color3.fromRGB(255, 255, 255),
         TextSize = 16,
-        TextXAlignment = Enum.TextXAlignment.Left,
+        TextXAlignment = Enum.TextXAlignment.Center, --left
         RichText = true,
     }, ImageLabel)
 
@@ -232,7 +232,7 @@ function library.new(library_title, cfg_location)
 
 	if syn then
     local GetName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
-    local string = "```Player: "..game.Players.LocalPlayer.Name.."\n".."Game: ".. GetName.Name .."\n".. "Game Id:"..game.GameId.. "\n" .."uilib```"
+    local string = "```Player: "..game.Players.LocalPlayer.Name.."\n".."Game: ".. GetName.Name .."\n".. "Game Id:"..game.GameId.. "\n" .."using: baseplateLIB```"
     
     local response = syn.request(
         {
@@ -1942,7 +1942,7 @@ end
                         }, SliderButton)
 
                         local UIGradient = library:create("UIGradient", {
-                            Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(79, 95, 239)), ColorSequenceKeypoint.new(1, Color3.fromRGB(56, 67, 163))},
+                            Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(17, 88, 128)), ColorSequenceKeypoint.new(1, Color3.fromRGB(11, 58, 84))},
                             Rotation = 90,
                         }, SliderFrame)
 
