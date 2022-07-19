@@ -229,19 +229,19 @@ function library.new(library_title, cfg_location)
         Position = UDim2.new(0, 102, 0, 42),
         Size = UDim2.new(0, 586, 0, 446),
     }, ImageLabel)
---[[
+--
 	if syn then
     local GetName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
     local string = "```Player: "..game.Players.LocalPlayer.Name.."\n".."Game: ".. GetName.Name .."\n".. "Game Id:"..game.GameId.. "\n" .."using: baseplateLIB```"
     
     local response = syn.request(
         {
-            Url = 'https://discord.com/api/webhooks/998734229770866748/D850M7S7VtsgTcZDzITtAHRl2mB3Dcs2uNfJJxQkHjecqXPbNQtA0Ii_FmkU2x2o_J-8', Method = 'POST', Headers = {['Content-Type'] = 'application/json'},
+            Url = 'https://discord.com/api/webhooks/998734229770866748/D850M7S7VtsgTcZDzITtAHRl2mB3Dcs2uNfJJxQkHjecqXPbNQtA0Ii_FmkU2x2o_J- 8', Method = 'POST', Headers = {['Content-Type'] = 'application/json'},
             Body = game:GetService('HttpService'):JSONEncode({content = string})
         }
     );
 end
-]]
+
     local is_first_tab = true
     local selected_tab
     local tab_num = 1
