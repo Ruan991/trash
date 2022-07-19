@@ -494,7 +494,7 @@ end
 
                     local Line = library:create("Frame", {
                         Name = "Line",
-                        BackgroundColor3 = Color3.fromRGB(25, 25, 25),
+                        BackgroundColor3 = Color3.fromRGB(2, 10, 20),
                         BorderColor3 = Color3.fromRGB(0, 0, 0),
                         Position = UDim2.new(0.5, 0, 0.5, 0),
                         AnchorPoint = Vector2.new(0.5, 0.5),
@@ -1115,7 +1115,7 @@ end
 
                         local DropdownButton = library:create("TextButton", {
                             Name = "DropdownButton",
-                            BackgroundColor3 = Color3.fromRGB(25, 25, 25),
+                            BackgroundColor3 = Color3.fromRGB(2, 10, 20),
                             BorderColor3 = Color3.fromRGB(0, 0, 0),
                             Position = UDim2.new(0, 9, 0, 20),
                             Size = UDim2.new(0, 260, 0, 20),
@@ -1157,7 +1157,7 @@ end
                         local DropdownScroll = library:create("ScrollingFrame", {
                             Name = "DropdownScroll",
                             Active = true,
-                            BackgroundColor3 = Color3.fromRGB(25, 25, 25),
+                            BackgroundColor3 = Color3.fromRGB(2, 10, 20),
                             BorderColor3 = Color3.fromRGB(0, 0, 0),
                             Position = UDim2.new(0, 9, 0, 41),
                             Size = UDim2.new(0, 260, 0, 20),
@@ -1238,7 +1238,7 @@ end
                         for _,v in next, data.options do
                             local Button = library:create("TextButton", {
                                 Name = v,
-                                BackgroundColor3 = Color3.fromRGB(25, 25, 25),
+                                BackgroundColor3 = Color3.fromRGB(2, 10, 20),
                                 BorderColor3 = Color3.fromRGB(0, 0, 0),
                                 BorderSizePixel = 0,
                                 Position = UDim2.new(0, 0, 0, 20),
@@ -1321,7 +1321,7 @@ end
 
                         local DropdownButton = library:create("TextButton", {
                             Name = "DropdownButton",
-                            BackgroundColor3 = Color3.fromRGB(25, 25, 25),
+                            BackgroundColor3 = Color3.fromRGB(2, 10, 20),
                             BorderColor3 = Color3.fromRGB(0, 0, 0),
                             Position = UDim2.new(0, 9, 0, 20),
                             Size = UDim2.new(0, 260, 0, 20),
@@ -1363,7 +1363,7 @@ end
                         local DropdownScroll = library:create("ScrollingFrame", {
                             Name = "DropdownScroll",
                             Active = true,
-                            BackgroundColor3 = Color3.fromRGB(25, 25, 25),
+                            BackgroundColor3 = Color3.fromRGB(2, 10, 20),
                             BorderColor3 = Color3.fromRGB(0, 0, 0),
                             Position = UDim2.new(0, 9, 0, 41),
                             Size = UDim2.new(0, 260, 0, 20),
@@ -1487,7 +1487,7 @@ end
                         for _,v in next, data.options do
                             local Button = library:create("TextButton", {
                                 Name = v,
-                                BackgroundColor3 = Color3.fromRGB(25, 25, 25),
+                                BackgroundColor3 = Color3.fromRGB(2, 10, 20),
                                 BorderColor3 = Color3.fromRGB(0, 0, 0),
                                 BorderSizePixel = 0,
                                 Position = UDim2.new(0, 0, 0, 20),
@@ -1567,7 +1567,7 @@ end
                         local Button = library:create("TextButton", {
                             Name = "Button",
                             AnchorPoint = Vector2.new(0.5, 0.5),
-                            BackgroundColor3 = Color3.fromRGB(25, 25, 25),
+                            BackgroundColor3 = Color3.fromRGB(2, 10, 20),
                             BorderColor3 = Color3.fromRGB(0, 0, 0),
                             Position = UDim2.new(0.5, 0, 0.5, 0),
                             Size = UDim2.new(0, 215, 0, 20),
@@ -1616,7 +1616,7 @@ end
                         local TextBox = library:create("TextBox", {
                             Name = "Button",
                             AnchorPoint = Vector2.new(0.5, 0.5),
-                            BackgroundColor3 = Color3.fromRGB(25, 25, 25),
+                            BackgroundColor3 = Color3.fromRGB(2, 10, 20),
                             BorderColor3 = Color3.fromRGB(0, 0, 0),
                             Position = UDim2.new(0.5, 0, 0.5, 0),
                             Size = UDim2.new(0, 215, 0, 20),
@@ -1693,7 +1693,7 @@ end
                         local ScrollFrame = library:create("ScrollingFrame", {
                             Name = "ScrollFrame",
                             Active = true,
-                            BackgroundColor3 = Color3.fromRGB(25, 25, 25),
+                            BackgroundColor3 = Color3.fromRGB(2, 10, 20),
                             BorderColor3 = Color3.fromRGB(0, 0, 0),
                             Position = UDim2.new(0.5, 0, 0, 5),
                             Size = UDim2.new(0, 215, 0, scrollsize * 20),
@@ -1720,7 +1720,7 @@ end
                         for _,v in next, data.options do
                             local Button = library:create("TextButton", {
                                 Name = v,
-                                BackgroundColor3 = Color3.fromRGB(25, 25, 25),
+                                BackgroundColor3 = Color3.fromRGB(2, 10, 20),
                                 BorderColor3 = Color3.fromRGB(0, 0, 0),
                                 BorderSizePixel = 0,
                                 Position = UDim2.new(0, 0, 0, 20),
@@ -1798,7 +1798,7 @@ end
 
                             local Button = library:create("TextButton", {
                                 Name = v,
-                                BackgroundColor3 = Color3.fromRGB(25, 25, 25),
+                                BackgroundColor3 = Color3.fromRGB(2, 10, 20),
                                 BorderColor3 = Color3.fromRGB(0, 0, 0),
                                 BorderSizePixel = 0,
                                 Position = UDim2.new(0, 0, 0, 20),
@@ -1925,7 +1925,7 @@ end
 
                         local SliderButton = library:create("TextButton", {
                             Name = "SliderButton",
-                            BackgroundColor3 = Color3.fromRGB(25, 25, 25),
+                            BackgroundColor3 = Color3.fromRGB(2, 10, 20),
                             BorderColor3 = Color3.fromRGB(0, 0, 0),
                             Position = UDim2.new(0, 9, 0, 20),
                             Size = UDim2.new(0, 260, 0, 10),
