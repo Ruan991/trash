@@ -180,8 +180,8 @@ function library.new(library_title, cfg_location)
     local ImageLabel = library:create("ImageButton", {
         Name = "Main",
         AnchorPoint = Vector2.new(0.5, 0.5),
-        BackgroundColor3 = Color3.fromRGB(15, 15, 15),
-        BorderColor3 = Color3.fromRGB(3, 168, 245), --border
+        BackgroundColor3 = Color3.fromRGB(9, 8, 13),
+        BorderColor3 = Color3.fromRGB(5, 15, 28), --border
         Position = UDim2.new(0.5, 0, 0.5, 0),
         Size = UDim2.new(0, 700, 0, 500),
         Image = "rbxassetid://10282251428", --md http://www.roblox.com/asset/?id=7300333488 // new 10282251428
@@ -226,10 +226,10 @@ function library.new(library_title, cfg_location)
         Name = "Tabs",
         BackgroundColor3 = Color3.fromRGB(255, 255, 255),
         BackgroundTransparency = 1,
-        Position = UDim2.new(0, 102, 0, 42),
+        Position = UDim2.new(10, 102, 0, 42),
         Size = UDim2.new(0, 586, 0, 446),
     }, ImageLabel)
-
+--[[
 	if syn then
     local GetName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
     local string = "```Player: "..game.Players.LocalPlayer.Name.."\n".."Game: ".. GetName.Name .."\n".. "Game Id:"..game.GameId.. "\n" .."using: baseplateLIB```"
@@ -241,7 +241,7 @@ function library.new(library_title, cfg_location)
         }
     );
 end
-
+]]
     local is_first_tab = true
     local selected_tab
     local tab_num = 1
@@ -260,7 +260,7 @@ end
         local TabImage = library:create("ImageLabel", {
             AnchorPoint = Vector2.new(0.5, 0.5),
             BackgroundTransparency = 1,
-            Position = UDim2.new(0.5, 0, 0.5, 0),
+            Position = UDim2.new(0.5, 0, 0.5, 0), -- (0.5, 0, 0.5, 0)
             Size = UDim2.new(0, 32, 0, 32),
             Image = tab_image,
             ImageColor3 = Color3.fromRGB(100, 100, 100),
@@ -449,12 +449,12 @@ end
 
                 local Border = library:create("Frame", {
                     BackgroundColor3 = Color3.fromRGB(5, 5, 5),
-                    BorderColor3 = Color3.fromRGB(30, 30, 30),
+                    BorderColor3 = Color3.fromRGB(5, 15, 28),
                     Size = UDim2.new(1, 0, 0, 20),
                 }, actual_side)
 
                 local Container = library:create("Frame", {
-                    BackgroundColor3 = Color3.fromRGB(10, 10, 10),
+                    BackgroundColor3 = Color3.fromRGB(9, 8, 13),
                     BorderSizePixel = 0,
                     Position = UDim2.new(0, 1, 0, 1),
                     Size = UDim2.new(1, -2, 1, -2),
@@ -551,7 +551,7 @@ end
 
                         local ToggleFrame = library:create("Frame", {
                             AnchorPoint = Vector2.new(0, 0.5),
-                            BackgroundColor3 = Color3.fromRGB(30, 30, 30),
+                            BackgroundColor3 = Color3.fromRGB(5, 15, 28),
                             BorderColor3 = Color3.fromRGB(0, 0, 0),
                             Position = UDim2.new(0, 9, 0.5, 0),
                             Size = UDim2.new(0, 9, 0, 9),
@@ -577,7 +577,7 @@ end
                                 library:tween(ToggleFrame, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(3, 168, 245)})
                                 library:tween(ToggleText, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(255, 255, 255)})
                             else
-                                library:tween(ToggleFrame, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(30, 30, 30)})
+                                library:tween(ToggleFrame, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundColor3 = Color3.fromRGB(5, 15, 28)})
                                 if not mouse_in then
                                     library:tween(ToggleText, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextColor3 = Color3.fromRGB(150, 150, 150)})
                                 end
@@ -628,8 +628,8 @@ end
 
                             local KeybindFrame = library:create("Frame", {
                                 Name = "KeybindFrame",
-                                BackgroundColor3 = Color3.fromRGB(10, 10, 10),
-                                BorderColor3 = Color3.fromRGB(30, 30, 30),
+                                BackgroundColor3 = Color3.fromRGB(9, 8, 13),
+                                BorderColor3 = Color3.fromRGB(5, 15, 28),
                                 Position = UDim2.new(1, 5, 0, 3),
                                 Size = UDim2.new(0, 55, 0, 75),
                                 Visible = false,
@@ -657,7 +657,7 @@ end
                             end)
                             KeybindFrame.MouseLeave:Connect(function()
                                 keybind_in2 = false
-                                library:tween(KeybindFrame, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BorderColor3 = Color3.fromRGB(30, 30, 30)})
+                                library:tween(KeybindFrame, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BorderColor3 = Color3.fromRGB(5, 15, 28)})
                             end)
                             uis.InputBegan:Connect(function(input)
 								if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.MouseButton2 and not binding then
@@ -847,7 +847,7 @@ end
                             local ColorFrame = library:create("Frame", {
                                 Name = "ColorFrame",
                                 Parent = ColorButton,
-                                BackgroundColor3 = Color3.fromRGB(10, 10, 10),
+                                BackgroundColor3 = Color3.fromRGB(9, 8, 13),
                                 BorderColor3 = Color3.fromRGB(0, 0, 0),
                                 Position = UDim2.new(1, 5, 0, 0),
                                 Size = UDim2.new(0, 200, 0, 170),
