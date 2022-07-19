@@ -181,7 +181,7 @@ function library.new(library_title, cfg_location)
         Name = "Main",
         AnchorPoint = Vector2.new(0.5, 0.5),
         BackgroundColor3 = Color3.fromRGB(15, 15, 15),
-        BorderColor3 = Color3.fromRGB(78, 93, 234),
+        BorderColor3 = Color3.fromRGB(3, 168, 245), --border
         Position = UDim2.new(0.5, 0, 0.5, 0),
         Size = UDim2.new(0, 700, 0, 500),
         Image = "rbxassetid://7300333488", --md http://www.roblox.com/asset/?id=7300333488 // new 10282251428
@@ -377,7 +377,7 @@ end
             }, SectionButton)
 --grad
             local UIGradient = library:create("UIGradient", {
-                Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(3, 100, 245)), ColorSequenceKeypoint.new(0.5, Color3.fromRGB(3, 168, 245)), ColorSequenceKeypoint.new(1, Color3.fromRGB(19, 38, 176))},
+                Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(21, 102, 209)), ColorSequenceKeypoint.new(0.5, Color3.fromRGB(3, 168, 245)), ColorSequenceKeypoint.new(1, Color3.fromRGB(40, 119, 199))},
             }, SectionDecoration)
 
             local SectionFrame = library:create("Frame", {
@@ -1942,7 +1942,7 @@ end
                         }, SliderButton)
 
                         local UIGradient = library:create("UIGradient", {
-                            Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(17, 88, 128)), ColorSequenceKeypoint.new(1, Color3.fromRGB(11, 58, 84))},
+                            Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(50, 139, 199)), ColorSequenceKeypoint.new(1, Color3.fromRGB(17, 100, 156))},
                             Rotation = 90,
                         }, SliderFrame)
 
